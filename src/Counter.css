@@ -1,0 +1,43 @@
+.counter-container {
+    text-align: center;
+    padding: 20px;
+    background: #ffcc5c;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 3px solid #ff6f61;
+    animation: fadeIn 1s ease-out;
+}
+
+.counter-container h1 {
+    font-size: 5rem;
+    margin: 10px 0;
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.counter-button {
+    padding: 12px 25px;
+    font-size: 1.4rem;
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.counter-button:hover {
+    background-color: #357ABD;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.counter-button:active {
+    background-color: #2C5D9E;
+    transform: translateY(2px);
+}
+
+/* Keyframe animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
