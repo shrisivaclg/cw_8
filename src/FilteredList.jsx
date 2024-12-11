@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import './FilteredList.css';
 import List from './List';
 import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './FilteredList.css';
 
 class FilteredList extends Component {
     constructor(props) {
@@ -10,19 +10,22 @@ class FilteredList extends Component {
         this.state = { filter: 'All', search: '' };
     }
 
-    updateFilter = (type) => {
+    handleFilterChange = (type) => {
         this.setState({ filter: type });
     };
 
-    updateSearch = (event) => {
+    handleSearchChange = (event) => {
         this.setState({ search: event.target.value });
     };
 
     filterItems = () => {
-        return this.props.items.filter(
+        const { items } = this.props;
+        const { filter, search } = this.state;
+
+        return items.filter(
             (item) =>
-                (this.state.filter === 'All' || item.type === this.state.filter) &&
-                item.name.toLowerCase().includes(this.state.search.toLowerCase())
+                (filter === 'All' || item.type === filter) &&
+                item.name.toLowerCase().includes(search.toLowerCase())
         );
     };
 
@@ -30,35 +33,27 @@ class FilteredList extends Component {
         return (
             <div className="filtered-list-container">
                 <div className="search-filter-container">
-                    {/* Search Box */}
                     <input
                         type="text"
                         className="search-box"
-                        placeholder="Search"
-                        onChange={this.updateSearch}
+                        placeholder="Search items..."
+                        onChange={this.handleSearchChange}
                     />
-
-                    {/* Filter Dropdown */}
                     <Dropdown className="dropdown-filter">
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            Filter
-                        </Dropdown.Toggle>
-
+                        <Dropdown.Toggle>Filter</Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item onClick={() => this.updateFilter('All')}>
+                            <Dropdown.Item onClick={() => this.handleFilterChange('All')}>
                                 All
                             </Dropdown.Item>
-                            <Dropdown.Item onClick={() => this.updateFilter('Fruit')}>
+                            <Dropdown.Item onClick={() => this.handleFilterChange('Fruit')}>
                                 Fruit
                             </Dropdown.Item>
-                            <Dropdown.Item onClick={() => this.updateFilter('Vegetable')}>
+                            <Dropdown.Item onClick={() => this.handleFilterChange('Vegetable')}>
                                 Vegetable
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
-
-                {/* Display Filtered List */}
                 <List items={this.filterItems()} />
             </div>
         );
