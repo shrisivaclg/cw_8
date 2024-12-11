@@ -13,18 +13,13 @@ class Counter extends Component {
 
     render() {
         return (
-            <div className="counter-container">
-                <div className="counter-header">
-                    <h1>Counter</h1>
-                </div>
-                <div className="counter-display">
+            <div className="counter-card">
+                <div className="counter-circle">
                     <h2>{this.state.count}</h2>
                 </div>
-                <div className="counter-controls">
-                    <button className="counter-button" onClick={this.increment}>
-                        Increment
-                    </button>
-                </div>
+                <button className="counter-button" onClick={this.increment}>
+                    +
+                </button>
             </div>
         );
     }

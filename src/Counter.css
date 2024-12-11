@@ -1,71 +1,61 @@
-.counter-container {
+/* Counter card styling */
+.counter-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #ffcc5c;
-    border-radius: 15px;
-    border: 3px solid #ff6f61;
-    width: 300px;
-    margin: 30px auto;
-    padding: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.8s ease-out;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 20px;
+    padding: 30px;
+    width: 250px;
+    height: 350px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.7);
+    margin: 50px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.counter-header {
+.counter-card:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15), -15px -15px 30px rgba(255, 255, 255, 0.85);
+}
+
+/* Counter circle for display */
+.counter-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #ff6f61, #ff4b47);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
     margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.counter-header h1 {
-    font-size: 2.5rem;
-    color: #ff6f61;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 0;
-}
-
-.counter-display h2 {
-    font-size: 4rem;
-    color: #4A90E2;
-    margin: 10px 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.counter-controls {
-    margin-top: 20px;
-}
-
+/* Increment button styling */
 .counter-button {
-    padding: 12px 30px;
-    font-size: 1.4rem;
-    color: white;
-    background-color: #4A90E2;
+    padding: 15px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(145deg, #4a90e2, #357abd);
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .counter-button:hover {
-    background-color: #357ABD;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+    background: linear-gradient(145deg, #357abd, #2c5d9e);
+    transform: scale(1.1);
 }
 
 .counter-button:active {
-    background-color: #2C5D9E;
-    transform: translateY(2px);
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+    transform: translateY(3px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), -2px -2px 8px rgba(255, 255, 255, 0.5);
 }
