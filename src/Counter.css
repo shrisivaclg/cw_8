@@ -22,12 +22,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #00bfae;
+    background: red;
     margin-bottom: 25px;
-    color: rgb(102, 228, 240);
+    color: white;
     font-size: 3.5rem;
     font-weight: bold;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .counter-button {
