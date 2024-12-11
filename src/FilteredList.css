@@ -1,27 +1,30 @@
+/* Filtered List container styling */
 .filtered-list-container {
-    padding: 20px;
+    padding: 30px;
     background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
     border: 3px solid #FF6F61;
     transition: all 0.3s ease;
 }
 
+/* Search and Filter container */
 .search-filter-container {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
     align-items: center;
+    gap: 20px;
 }
 
+/* Search Box styling */
 .search-box {
     flex-grow: 1;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    border-radius: 15px;
     border: 2px solid #4A90E2;
-    background-color: #f0f8ff;
+    background-color: #f9f9f9;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -30,11 +33,11 @@
     box-shadow: 0 0 10px rgba(255, 95, 95, 0.5);
 }
 
+/* Dropdown button styling */
 .dropdown-filter .btn {
-    padding: 12px;
-    font-size: 1rem;
-    text-align: left;
-    border-radius: 10px;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 12px;
     background-color: #4A90E2;
     color: white;
     border: none;
@@ -45,14 +48,15 @@
     background-color: #FF5722;
 }
 
+/* Dropdown menu item styling */
 .dropdown-filter .dropdown-menu {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-filter .dropdown-item {
-    padding: 12px 20px;
-    font-size: 1rem;
+    padding: 14px 22px;
+    font-size: 1.1rem;
     color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
