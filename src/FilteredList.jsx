@@ -33,14 +33,10 @@ class FilteredList extends Component {
         return (
             <div className="filtered-list-container">
                 <div className="search-filter-container">
-                    <input
-                        type="text"
-                        className="search-box"
-                        placeholder="Search items..."
-                        onChange={this.handleSearchChange}
-                    />
                     <Dropdown className="dropdown-filter">
-                        <Dropdown.Toggle>Filter</Dropdown.Toggle>
+                        <Dropdown.Toggle className="btn">
+                            Filter
+                        </Dropdown.Toggle>
                         <Dropdown.Menu>
                             <Dropdown.Item onClick={() => this.handleFilterChange('All')}>
                                 All
@@ -53,8 +49,16 @@ class FilteredList extends Component {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
+                    <input
+                        type="text"
+                        className="search-box"
+                        placeholder="Search items..."
+                        onChange={this.handleSearchChange}
+                    />
                 </div>
-                <List items={this.filterItems()} />
+                <div className="list-container">
+                    <List items={this.filterItems()} />
+                </div>
             </div>
         );
     }
