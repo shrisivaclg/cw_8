@@ -1,85 +1,79 @@
+/* Filtered List container styling */
 .filtered-list-container {
     padding: 35px;
-    background-color: #2a2a2a;
-    border-radius: 16px;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;  /* Plain background */
+    border-radius: 20px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    transition: all 0.3s ease;
 }
 
+/* Search and Filter container */
 .search-filter-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 
+/* Filter Dropdown */
 .dropdown-filter .btn {
-    padding: 16px 24px;
+    padding: 14px 20px;
     font-size: 1.1rem;
     border-radius: 12px;
-    background-color: #ff5722;
-    color: white;
+    background-color: #7967ea;
+    color: black;  /* Changed text color to black */
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-filter .btn:hover {
-    background-color: #e64a19;
-    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+    background-color: #ab6a81;
 }
 
+/* Search Box styling */
 .search-box {
-    padding: 16px 20px;
-    font-size: 1.3rem;
-    border-radius: 16px;
-    background-color: #424242;
-    color: #eeeeee;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    width: 300px;
+    color: #333;
 }
 
-.search-box:focus {
-    background-color: #616161;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
+/* Dropdown menu item styling */
 .dropdown-filter .dropdown-menu {
     border-radius: 12px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
 }
 
 .dropdown-filter .dropdown-item {
-    padding: 16px 24px;
+    padding: 14px 20px;
     font-size: 1.1rem;
-    color: #eeeeee;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: black;  /* Changed text color to black */
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-filter .dropdown-item:hover {
-    background-color: #616161;
-    color: #ff5722;
+    background-color: #f9f9f9;
+    color: #FF6F61;
 }
 
+/* Styling for List items */
 .list-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .list-item {
-    padding: 22px;
-    background-color: #3c3c3c;
-    border-radius: 12px;
-    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
 }
 
 .list-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
