@@ -1,7 +1,7 @@
 .hello-world {
     text-align: center;
     font-size: 3.5rem;
-    color: #FF6F61;
+    color: #90eedb;
     margin: 40px 0;
     font-weight: bold;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
@@ -10,6 +10,6 @@
 }
 
 .hello-world:hover {
-    color: #FFCC5C;
+    color: #d7f18f;
     transform: scale(1.1);
 }
