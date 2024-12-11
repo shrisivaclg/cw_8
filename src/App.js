@@ -35,7 +35,7 @@ function App() {
     return (
         <div className="App">
             <div className="App">
-             <HelloWorld name="Ramya Sree Narra" />
+             <HelloWorld name="Shrinidhi Sivakumar" />
              <Counter />
             </div>
             <FilteredList items={produce} />
