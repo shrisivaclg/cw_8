@@ -76,5 +76,14 @@
   .list-item {
     background-color: #edf2f7;
     padding: 15px;
-   
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .list-item:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px);
+  }
   
