@@ -1,57 +1,54 @@
-/* Counter card styling */
 .counter-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #f2f2f2;
+    background: #333;
     border-radius: 25px;
     padding: 40px;
-    width: 280px;
+    width: 300px;
     height: 380px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1), 0px -15px 25px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
     margin: 50px auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .counter-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2), 0px -20px 40px rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 25px 55px rgba(0, 0, 0, 0.2);
 }
 
-/* Counter circle for display */
 .counter-circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(145deg, #ffffff, #eb7d7b);
+    background: #00bfae;
     margin-bottom: 25px;
-    color: #ffffff;
+    color: white;
     font-size: 3.5rem;
     font-weight: bold;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Increment button styling */
 .counter-button {
-    padding: 18px 25px;
-    font-size: 1.8rem;
+    padding: 20px 30px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #ffffff;
-    background: linear-gradient(145deg, #4a90e2, #357abd);
+    background: #0288d1;
     border: none;
     border-radius: 50px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .counter-button:hover {
-    background: linear-gradient(145deg, #357abd, #2c5d9e);
-    transform: scale(1.1);
+    background: #0277bd;
+    transform: scale(1.05);
 }
 
 .counter-button:active {
     transform: translateY(3px);
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), -2px -2px 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

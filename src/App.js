@@ -1,15 +1,4 @@
-// import Counter from './Counter';
 
-// function App() {
-//     return (
-//         <div className="App">
-//             <HelloWorld name="Your Name" />
-//             <Counter />
-//         </div>
-//     );
-// }
-
-// export default App;
 import FilteredList from './FilteredList';
 import Counter from './Counter';
 import HelloWorld from './HelloWorld';

@@ -1,15 +1,15 @@
 .hello-world {
     text-align: center;
     font-size: 3.5rem;
-    color: #575ff8;
+    color: #8bc34a;
     margin: 40px 0;
     font-weight: bold;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
     letter-spacing: 1.5px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .hello-world:hover {
-    color: #de5ac5;
-    transform: scale(1.1);
+    color: #cddc39;
+    transform: scale(1.05);
 }
